@@ -1,4 +1,4 @@
-#PDF-to-Excel Data Synchronizer 📊📄
+## PDF-to-Excel Data Synchronizer 
 
 A professional Python automation tool designed to synchronize data between unstructured PDF documents and structured Excel databases through high-performance pattern matching.
 
@@ -15,7 +15,7 @@ To customize the tool for your specific needs, modify the `CONFIG` block in `dat
 ## How It Works: Step-by-Step
 Environment Setup: The script initializes by reading the CONFIG dictionary, which defines the source files, folder paths, and specific Regex patterns required for the project.
 
-PDF Scanning & Data Mining:
+    PDF Scanning & Data Mining:
 
 The tool iterates through every PDF file in the specified folder.
 
@@ -23,13 +23,13 @@ It utilizes pdfplumber to extract raw text and applies Regular Expressions (Rege
 
 Extracted data is stored in a high-speed Python dictionary {(Key1, Key2): Value} for efficient lookup.
 
-Excel Standardization:
+    Excel Standardization:
 
 The source Excel file is loaded into a pandas DataFrame.
 
 Column headers are standardized (trimmed and capitalized) to prevent matching errors caused by hidden spaces or casing.
 
-Data Matching & Merging:
+    Data Matching & Merging:
 
 The script performs a row-by-row iteration over the Excel data.
 
@@ -37,7 +37,7 @@ It checks if the current row's keys exist in the PDF database.
 
 If a match is found and the target cell in Excel is empty, it populates the cell with the verified value from the PDF.
 
-Output & Formatting:
+    Output & Formatting:
 
 The synchronized data is exported to a new Excel file.
 
