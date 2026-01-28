@@ -1,4 +1,4 @@
-# Universal PDF-to-Excel Data Synchronizer 📊📄
+#PDF-to-Excel Data Synchronizer 📊📄
 
 A professional Python automation tool designed to synchronize data between unstructured PDF documents and structured Excel databases through high-performance pattern matching.
 
